@@ -335,3 +335,89 @@ groups:
     after: [ *lateChangesGroup ]
 
 plugins:
+###### Official Game Files ######
+  - name: 'Oblivion.esm'
+    group: *gameMasterGroup
+  - name: 'DLCBattlehornCastle.esp'
+    group: *dlcGroup
+  - name: 'DLCFrostcrag.esp'
+    group: *dlcGroup
+    after: [ 'DLCBattlehornCastle.esp' ]
+  - name: 'DLCHorseArmor.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+  - name: 'DLCMehrunesRazor.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+  - name: 'DLCOrrery.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+  - name: 'DLCShiveringIsles.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+      - 'DLCOrrery.esp'
+  - name: 'DLCSpellTomes.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+      - 'DLCOrrery.esp'
+      - 'DLCShiveringIsles.esp'
+  - name: 'DLCThievesDen.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+      - 'DLCOrrery.esp'
+      - 'DLCShiveringIsles.esp'
+      - 'DLCSpellTomes.esp'
+  - name: 'DLCVileLair.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+      - 'DLCOrrery.esp'
+      - 'DLCShiveringIsles.esp'
+      - 'DLCSpellTomes.esp'
+      - 'DLCThievesDen.esp'
+  - name: 'Knights.esp'
+    group: *dlcGroup
+    after:
+      - 'DLCBattlehornCastle.esp'
+      - 'DLCFrostcrag.esp'
+      - 'DLCHorseArmor.esp'
+      - 'DLCMehrunesRazor.esp'
+      - 'DLCOrrery.esp'
+      - 'DLCShiveringIsles.esp'
+      - 'DLCSpellTomes.esp'
+      - 'DLCThievesDen.esp'
+      - 'DLCVileLair.esp'
+  - name: 'AltarESPMain.esp'
+    group: *dlcGroup
+  - name: 'AltarESPLocal.esp'
+    group: *dlcGroup
+  - name: 'AltarDeluxe.esp'
+    group: *dlcGroup
+  - name: 'AltarGymNavigation.esp'
+    group: *dlcGroup
+  - name: 'TamrielLeveledRegion.esp'
+    group: *dlcGroup

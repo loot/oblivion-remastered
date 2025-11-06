@@ -337,6 +337,8 @@ bash_tags:
   - 'Text'
 
 globals:
+# Latest LOOT Thread
+  - *latestLOOTThread
 
 groups:
   - name: &gameMasterGroup Main Game Master

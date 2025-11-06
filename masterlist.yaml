@@ -242,10 +242,103 @@ prelude:
       content: 'You seem to be using **{0}**, but it has been superseded. It is recommended that you use **{1}** instead.'
 
 common:
+# Condition Anchors
+  - &isOblivion >-
+      not (
+        file("../../../../Binaries/Win64/OblivionRemastered-Win64-Shipping.exe") or
+        file("../../../../Binaries/WinGDK/OblivionRemastered-WinGDK-Shipping.exe")
+      ) and not file("../NehrimLauncher.exe")
+
+  - &isOblivionRemastered
+    file("../../../../Binaries/Win64/OblivionRemastered-Win64-Shipping.exe") or file("../../../../Binaries/WinGDK/OblivionRemastered-WinGDK-Shipping.exe")
+
+# File Anchors
+  - &OBSE64
+    name: '../../../../Binaries/Win64/obse64_1_512_105.dll'
+    display: '[OBSE64](https://www.nexusmods.com/oblivionremastered/mods/282/)'
+
+# Sub-Anchors
 
 bash_tags:
+  - 'Actors.ACBS'
+  - 'Actors.AIData'
+  - 'Actors.AIPackages'
+  - 'Actors.AIPackagesForceAdd'
+  - 'Actors.Anims'
+  - 'Actors.CombatStyle'
+  - 'Actors.DeathItem'
+  - 'Actors.Factions'
+  - 'Actors.RecordFlags'
+  - 'Actors.Skeleton'
+  - 'Actors.Spells'
+  - 'Actors.SpellsForceAdd'
+  - 'Actors.Stats'
+  - 'C.Climate'
+  - 'C.Light'
+  - 'C.MiscFlags'
+  - 'C.Music'
+  - 'C.Name'
+  - 'C.Owner'
+  - 'C.RecordFlags'
+  - 'C.Regions'
+  - 'C.Water'
+  - 'Creatures.Blood'
+  - 'Creatures.Type'
+  - 'Deactivate'
+  - 'Delev'
+  - 'EffectStats'
+  - 'Enchantments'
+  - 'EnchantmentStats'
+  - 'Filter'
+  - 'Graphics'
+  - 'IIM'
+  - 'Invent.Add'
+  - 'Invent.Change'
+  - 'Invent.Remove'
+  - 'MustBeActiveIfImported'
+  - 'Names'
+  - 'NoMerge'
+  - 'NPC.Class'
+  - 'NPC.Eyes'
+  - 'NPC.FaceGen'
+  - 'NPC.Hair'
+  - 'NPC.Race'
+  - 'NpcFacesForceFullImport'
+  - 'R.AddSpells'
+  - 'R.Attributes-F'
+  - 'R.Attributes-M'
+  - 'R.Body-F'
+  - 'R.Body-M'
+  - 'R.Body-Size-F'
+  - 'R.Body-Size-M'
+  - 'R.ChangeSpells'
+  - 'R.Description'
+  - 'R.Ears'
+  - 'R.Eyes'
+  - 'R.Hair'
+  - 'R.Head'
+  - 'R.Mouth'
+  - 'R.Relations.Add'
+  - 'R.Relations.Change'
+  - 'R.Relations.Remove'
+  - 'R.Skills'
+  - 'R.Teeth'
+  - 'R.Voice-F'
+  - 'R.Voice-M'
+  - 'Relations.Add'
+  - 'Relations.Change'
+  - 'Relations.Remove'
+  - 'Relev'
+  - 'Roads'
+  - 'Scripts'
+  - 'Sound'
+  - 'SpellStats'
+  - 'Stats'
+  - 'Text'
 
 globals:
+# Latest LOOT Thread
+  - *latestLOOTThread
 
 groups:
   - name: &gameMasterGroup Main Game Master

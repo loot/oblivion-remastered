@@ -243,6 +243,15 @@ prelude:
 
 common:
 # Condition Anchors
+  - &isOblivion >-
+      not (
+        file("../../../../Binaries/Win64/OblivionRemastered-Win64-Shipping.exe") or
+        file("../../../../Binaries/WinGDK/OblivionRemastered-WinGDK-Shipping.exe")
+      ) and not file("../NehrimLauncher.exe")
+
+  - &isOblivionRemastered
+    file("../../../../Binaries/Win64/OblivionRemastered-Win64-Shipping.exe") or file("../../../../Binaries/WinGDK/OblivionRemastered-WinGDK-Shipping.exe")
+
 # File Anchors
 # Sub-Anchors
 

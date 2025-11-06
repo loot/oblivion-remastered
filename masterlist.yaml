@@ -253,6 +253,10 @@ common:
     file("../../../../Binaries/Win64/OblivionRemastered-Win64-Shipping.exe") or file("../../../../Binaries/WinGDK/OblivionRemastered-WinGDK-Shipping.exe")
 
 # File Anchors
+  - &OBSE64
+    name: '../../../../Binaries/Win64/obse64_1_512_105.dll'
+    display: '[OBSE64](https://www.nexusmods.com/oblivionremastered/mods/282/)'
+
 # Sub-Anchors
 
 bash_tags:

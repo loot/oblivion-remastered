@@ -433,20 +433,35 @@ plugins:
     group: *gameMasterGroup
   - name: 'DLCBattlehornCastle.esp'
     group: *dlcGroup
+    tag: [ Sound ]
   - name: 'DLCFrostcrag.esp'
     group: *dlcGroup
     after: [ 'DLCBattlehornCastle.esp' ]
+    tag:
+      - C.Light
+      - C.Name
+      - C.Owner
+      - C.Regions
+      - Factions
+      - Sound
   - name: 'DLCHorseArmor.esp'
     group: *dlcGroup
     after:
       - 'DLCBattlehornCastle.esp'
       - 'DLCFrostcrag.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Scripts
   - name: 'DLCMehrunesRazor.esp'
     group: *dlcGroup
     after:
       - 'DLCBattlehornCastle.esp'
       - 'DLCFrostcrag.esp'
       - 'DLCHorseArmor.esp'
+    tag:
+      - Actors.ACBS
+      - Factions
   - name: 'DLCOrrery.esp'
     group: *dlcGroup
     after:
@@ -454,6 +469,10 @@ plugins:
       - 'DLCFrostcrag.esp'
       - 'DLCHorseArmor.esp'
       - 'DLCMehrunesRazor.esp'
+    tag:
+      - Actors.AIPackages
+      - C.Light
+      - Sound
   - name: 'DLCShiveringIsles.esp'
     group: *dlcGroup
     after:
@@ -471,6 +490,9 @@ plugins:
       - 'DLCMehrunesRazor.esp'
       - 'DLCOrrery.esp'
       - 'DLCShiveringIsles.esp'
+    tag:
+      - Actors.Stats
+      - Relev
   - name: 'DLCThievesDen.esp'
     group: *dlcGroup
     after:
@@ -481,6 +503,18 @@ plugins:
       - 'DLCOrrery.esp'
       - 'DLCShiveringIsles.esp'
       - 'DLCSpellTomes.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - C.Climate
+      - C.Light
+      - C.MiscFlags
+      - C.Music
+      - C.Name
+      - C.Owner
+      - C.Water
+      - Names
   - name: 'DLCVileLair.esp'
     group: *dlcGroup
     after:
@@ -492,6 +526,7 @@ plugins:
       - 'DLCShiveringIsles.esp'
       - 'DLCSpellTomes.esp'
       - 'DLCThievesDen.esp'
+    tag: [ Sound ]
   - name: 'Knights.esp'
     group: *dlcGroup
     after:
@@ -504,6 +539,15 @@ plugins:
       - 'DLCSpellTomes.esp'
       - 'DLCThievesDen.esp'
       - 'DLCVileLair.esp'
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Actors.Stats
+      - Factions
+      - Graphics
+      - Invent.Add
+      - Invent.Remove
+      - Names
   - name: 'AltarESPMain.esp'
     group: *dlcGroup
   - name: 'AltarESPLocal.esp'

@@ -558,3 +558,52 @@ plugins:
     group: *dlcGroup
   - name: 'TamrielLeveledRegion.esp'
     group: *dlcGroup
+
+###### Base Game Patches ######
+###### Modding Tools ######
+###### Modding Tools ######
+###### Resources & Frameworks ######
+###### Fixes ######
+###### Fixes - Stability & Performance ######
+###### AudioVisual ######
+###### AudioVisual - Animations & Physics ######
+###### AudioVisual - Models & Textures ######
+###### AudioVisual - Sounds & Music ######
+###### AudioVisual - Water ######
+###### AudioVisual - Weather & Lighting ######
+###### Character Appearance - Body, face & hair ######
+###### Character Appearance - NPCs ######
+###### Encounters - Allies ######
+###### Encounters - Enemies ######
+###### Encounters - Neutral ######
+###### Environment, Landscape & Flora ######
+###### Gameplay - General ######
+###### Gameplay - Character Classes & Races ######
+###### Gameplay - Combat ######
+###### Gameplay - Crafting & Harvesting ######
+###### Gameplay - Economy & Item Balance ######
+###### Gameplay - Magic & Abilities ######
+###### Gameplay - NPC Balance & Distribution ######
+###### Gameplay - NPC Behaviour & Dialogue ######
+###### Gameplay - Quests ######
+###### Gameplay - Skills & Leveling ######
+###### Gameplay - User Interface ######
+###### Gameplay - User Interface - Maps ######
+###### Items ######
+###### Locations ######
+###### Locations - New Dungeons ######
+###### Locations - New Lands ######
+###### Locations - New Structures & Landmarks ######
+###### Locations - Overhauls ######
+###### Locations - Player homes ######
+###### Translations ######
+###### 3rd Party Patches ######
+###### Open Cities ######
+###### Unique Landscapes (UL) ######
+###### Unique Landscapes Compatibility Patches (ULE/ULM/ULS) ######
+###### FCOM: Convergence ######
+###### Francescos Creatures and Items V5 ######
+###### Martigen’s Monster Mod (MMM) ######
+###### Oscuro's Oblivion Overhaul (OOO) ######
+###### Waalx Animals & Creatures (WAC) ######
+###### Anything new can go after this (If you're not sure where to put it) ######

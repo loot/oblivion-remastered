@@ -347,7 +347,7 @@ groups:
     after: [ *gameMasterGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
-    description: 'A group for modules that should load early just after the DLC and Unofficial patches.'
+    description: 'A group for modules that should load early before most other mods.'
     after: [ *dlcGroup ]
 
   - name: default

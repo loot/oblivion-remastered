@@ -343,16 +343,10 @@ globals:
 groups:
   - name: &gameMasterGroup Main Game Master
 
-  - name: &veryEarlyGroup Very Early Loaders
-    description: 'A group for modules that should load early before the DLC and Unofficial patches.'
-    after: [ *gameMasterGroup ]
-
   - name: &preDLCPatchesGroup Pre DLC Patches
 
   - name: &dlcGroup DLC
-    after:
-      - *veryEarlyGroup
-      - *preDLCPatchesGroup
+    after: [ *preDLCPatchesGroup ]
 
   - name: &postDLCPatchesGroup Post DLC Patches
     after: [ *dlcGroup ]

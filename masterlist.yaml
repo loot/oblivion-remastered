@@ -541,9 +541,6 @@ plugins:
 ###### AudioVisual - Weather & Lighting ######
 ###### Character Appearance - Body, face & hair ######
 ###### Character Appearance - NPCs ######
-###### Encounters - Allies ######
-###### Encounters - Enemies ######
-###### Encounters - Neutral ######
 ###### Environment, Landscape & Flora ######
 ###### Gameplay - General ######
 ###### Gameplay - Character Classes & Races ######
@@ -557,21 +554,16 @@ plugins:
 ###### Gameplay - Skills & Leveling ######
 ###### Gameplay - User Interface ######
 ###### Gameplay - User Interface - Maps ######
-###### Items ######
 ###### Locations ######
 ###### Locations - New Dungeons ######
 ###### Locations - New Lands ######
 ###### Locations - New Structures & Landmarks ######
 ###### Locations - Overhauls ######
 ###### Locations - Player homes ######
+###### New Characters - Allies ######
+###### New Characters - Enemies ######
+###### New Characters - Neutrals ######
+###### New Items ######
 ###### Translations ######
 ###### 3rd Party Patches ######
-###### Open Cities ######
-###### Unique Landscapes (UL) ######
-###### Unique Landscapes Compatibility Patches (ULE/ULM/ULS) ######
-###### FCOM: Convergence ######
-###### Francescos Creatures and Items V5 ######
-###### Martigen’s Monster Mod (MMM) ######
-###### Oscuro's Oblivion Overhaul (OOO) ######
-###### Waalx Animals & Creatures (WAC) ######
 ###### Anything new can go after this (If you're not sure where to put it) ######

@@ -423,10 +423,6 @@ groups:
     description: 'A group for modules that need to be placed after dynamic patches such as Bashed Patch.'
     after: [ *dynamicPatchesGroup ]
 
-  - name: &lodTogglerGroup LOD Toggler
-    description: 'A group for modules that add or alter LOD.'
-    after: [ *lateChangesGroup ]
-
 plugins:
 ###### Official Game Files ######
   - name: 'Oblivion.esm'

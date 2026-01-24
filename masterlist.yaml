@@ -349,17 +349,12 @@ groups:
   - name: &postDLCPatchesGroup Post DLC Patches
     after: [ *dlcGroup ]
 
-  - name: &underridesGroup Underrides
-    after: [ *veryEarlyGroup ]
-
   - name: &earlyLoadersGroup Early Loaders
     description: 'A group for modules that should load early just after the DLC and Unofficial patches.'
     after: [ *postDLCPatchesGroup ]
 
   - name: default
-    after:
-      - *earlyLoadersGroup
-      - *underridesGroup
+    after: [ *earlyLoadersGroup ]
 
   - name: &lowPriorityGroup Low Priority Overrides
     description: 'A group for modules that must load after most other mods.'

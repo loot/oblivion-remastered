@@ -363,27 +363,11 @@ groups:
   - name: &coreGroup Core Mods
     after: [ *mediumPriorityGroup ]
 
-  - name: &uniquelandscapeGroup Unique Landscapes
-    description: 'A group for Unique Landscape main files.'
+  - name: &highPriorityGroup High Priority Overrides
     after: [ *coreGroup ]
 
-  - name: &openCitiesGroup Open Cities
-    description: 'A group for Open Cities.'
-    after: [ *uniquelandscapeGroup ]
-
-  - name: &betterCitiesGroup Better Cities
-    description: 'A group for Better Cities Full & separate city modules.'
-    after: [ *openCitiesGroup ]
-
-  - name: &highPriorityGroup High Priority Overrides
-    after: [ *betterCitiesGroup ]
-
-  - name: &bcImperialCityGroup Better Cities Imperial City
-    description: 'A group for Better Cities Imperial City, loads late due to WRLD changes.'
-    after: [ *highPriorityGroup ]
-
   - name: &lateLoadersGroup Late Loaders
-    after: [ *bcImperialCityGroup ]
+    after: [ *highPriorityGroup ]
 
   - name: &latePatchesGroup Late Patches
     after: [ *lateLoadersGroup ]

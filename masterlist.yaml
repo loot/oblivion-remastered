@@ -344,7 +344,7 @@ groups:
   - name: &gameMasterGroup Main Game Master
 
   - name: &dlcGroup DLC
-    after: [ *preDLCPatchesGroup ]
+    after: [ *gameMasterGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
     description: 'A group for modules that should load early just after the DLC and Unofficial patches.'

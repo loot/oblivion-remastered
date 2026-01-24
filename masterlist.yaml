@@ -343,8 +343,6 @@ globals:
 groups:
   - name: &gameMasterGroup Main Game Master
 
-  - name: &preDLCPatchesGroup Pre DLC Patches
-
   - name: &dlcGroup DLC
     after: [ *preDLCPatchesGroup ]
 

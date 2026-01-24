@@ -346,9 +346,13 @@ groups:
   - name: &dlcGroup DLC
     after: [ *gameMasterGroup ]
 
+  - name: &fixesGroup Fixes
+    description: 'A group for modules that fix issues and bugs.'
+    after: [ *dlcGroup ]
+
   - name: &earlyLoadersGroup Early Loaders
     description: 'A group for modules that should load early before most other mods.'
-    after: [ *dlcGroup ]
+    after: [ *fixesGroup ]
 
   - name: default
     after: [ *earlyLoadersGroup ]

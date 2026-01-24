@@ -343,31 +343,19 @@ globals:
 groups:
   - name: &gameMasterGroup Main Game Master
 
-  - name: &veryEarlyGroup Very Early Loaders
-    description: 'A group for modules that should load early before the DLC and Unofficial patches.'
+  - name: &dlcGroup DLC
     after: [ *gameMasterGroup ]
 
-  - name: &preDLCPatchesGroup Pre DLC Patches
-
-  - name: &dlcGroup DLC
-    after:
-      - *veryEarlyGroup
-      - *preDLCPatchesGroup
-
-  - name: &postDLCPatchesGroup Post DLC Patches
+  - name: &fixesGroup Fixes
+    description: 'A group for modules that fix issues and bugs.'
     after: [ *dlcGroup ]
 
-  - name: &underridesGroup Underrides
-    after: [ *veryEarlyGroup ]
-
   - name: &earlyLoadersGroup Early Loaders
-    description: 'A group for modules that should load early just after the DLC and Unofficial patches.'
-    after: [ *postDLCPatchesGroup ]
+    description: 'A group for modules that should load early before most other mods.'
+    after: [ *fixesGroup ]
 
   - name: default
-    after:
-      - *earlyLoadersGroup
-      - *underridesGroup
+    after: [ *earlyLoadersGroup ]
 
   - name: &lowPriorityGroup Low Priority Overrides
     description: 'A group for modules that must load after most other mods.'
@@ -379,27 +367,11 @@ groups:
   - name: &coreGroup Core Mods
     after: [ *mediumPriorityGroup ]
 
-  - name: &uniquelandscapeGroup Unique Landscapes
-    description: 'A group for Unique Landscape main files.'
+  - name: &highPriorityGroup High Priority Overrides
     after: [ *coreGroup ]
 
-  - name: &openCitiesGroup Open Cities
-    description: 'A group for Open Cities.'
-    after: [ *uniquelandscapeGroup ]
-
-  - name: &betterCitiesGroup Better Cities
-    description: 'A group for Better Cities Full & separate city modules.'
-    after: [ *openCitiesGroup ]
-
-  - name: &highPriorityGroup High Priority Overrides
-    after: [ *betterCitiesGroup ]
-
-  - name: &bcImperialCityGroup Better Cities Imperial City
-    description: 'A group for Better Cities Imperial City, loads late due to WRLD changes.'
-    after: [ *highPriorityGroup ]
-
   - name: &lateLoadersGroup Late Loaders
-    after: [ *bcImperialCityGroup ]
+    after: [ *highPriorityGroup ]
 
   - name: &latePatchesGroup Late Patches
     after: [ *lateLoadersGroup ]
@@ -422,10 +394,6 @@ groups:
   - name: &lateChangesGroup Late Fixes & Changes
     description: 'A group for modules that need to be placed after dynamic patches such as Bashed Patch.'
     after: [ *dynamicPatchesGroup ]
-
-  - name: &lodTogglerGroup LOD Toggler
-    description: 'A group for modules that add or alter LOD.'
-    after: [ *lateChangesGroup ]
 
 plugins:
 ###### Official Game Files ######

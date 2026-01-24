@@ -346,12 +346,9 @@ groups:
   - name: &dlcGroup DLC
     after: [ *preDLCPatchesGroup ]
 
-  - name: &postDLCPatchesGroup Post DLC Patches
-    after: [ *dlcGroup ]
-
   - name: &earlyLoadersGroup Early Loaders
     description: 'A group for modules that should load early just after the DLC and Unofficial patches.'
-    after: [ *postDLCPatchesGroup ]
+    after: [ *dlcGroup ]
 
   - name: default
     after: [ *earlyLoadersGroup ]

@@ -531,7 +531,7 @@ plugins:
   - name: 'Unofficial Oblivion Remastered Patch( - Deluxe)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/oblivionremastered/mods/477/'
-        name: 'Unofficial Oblivion Remastered Patch - UORP (Nexus Mods)
+        name: 'Unofficial Oblivion Remastered Patch - UORP (Nexus Mods)'
   - name: 'Unofficial Oblivion Remastered Patch.esp'
     group: *fixesGroup
     clean:

@@ -528,6 +528,10 @@ plugins:
     group: *dlcGroup
 
 ###### Base Game Patches ######
+  - name: 'Unofficial Oblivion Remastered Patch( - Deluxe)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/oblivionremastered/mods/477/'
+        name: 'Unofficial Oblivion Remastered Patch - UORP (Nexus Mods)
   - name: 'Unofficial Oblivion Remastered Patch.esp'
   - name: 'Unofficial Oblivion Remastered Patch - Deluxe.esp'
 

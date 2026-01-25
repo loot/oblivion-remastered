@@ -528,6 +528,9 @@ plugins:
     group: *dlcGroup
 
 ###### Base Game Patches ######
+  - name: 'Unofficial Oblivion Remastered Patch.esp'
+  - name: 'Unofficial Oblivion Remastered Patch - Deluxe.esp'
+
 ###### Modding Tools ######
 ###### Modding Tools - Generated Files ######
 ###### Resources & Frameworks ######

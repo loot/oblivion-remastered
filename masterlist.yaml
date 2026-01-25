@@ -528,6 +528,25 @@ plugins:
     group: *dlcGroup
 
 ###### Base Game Patches ######
+  - name: 'Unofficial Oblivion Remastered Patch( - Deluxe)?\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/oblivionremastered/mods/477/'
+        name: 'Unofficial Oblivion Remastered Patch - UORP (Nexus Mods)'
+  - name: 'Unofficial Oblivion Remastered Patch.esp'
+    group: *fixesGroup
+    clean:
+      - crc: 0xDE18F3AF
+        util: 'TES4REdit v4.1.5p 32bit fix version'
+  - name: 'Unofficial Oblivion Remastered Patch - Deluxe.esp'
+    group: *fixesGroup
+    tag:
+      - Actors.ACBS
+      - Actors.AIPackages
+      - Stats
+    clean:
+      - crc: 0x9E05ED7E
+        util: 'TES4REdit v4.1.5p 32bit fix version'
+
 ###### Modding Tools ######
 ###### Modding Tools - Generated Files ######
 ###### Resources & Frameworks ######

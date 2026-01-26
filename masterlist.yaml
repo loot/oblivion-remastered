@@ -549,6 +549,10 @@ plugins:
 
 ###### Modding Tools ######
 ###### Modding Tools - Generated Files ######
+  - name: 'Bashed Patch.*\.esp'
+    url: [ 'https://www.nexusmods.com/site/mods/591/' ]
+    group: *dynamicPatchesGroup
+
 ###### Resources & Frameworks ######
 ###### Fixes ######
 ###### Fixes - Stability & Performance ######

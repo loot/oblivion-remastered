@@ -234,8 +234,8 @@ prelude:
       content: 'You have installed an {0} plugin but {0} was not found! See {0} download page: {1}.'
       subs:
         - 'OBSE'
-        - '[OBSE](https://obse.silverlock.org)'
       condition: 'file("OBSE/Plugins/([^\.]+\.dll)") and not file("../obse_1_2_416.dll")'
+        - '[Oblivion Remastered Script Extender (OBSE64)](https://www.nexusmods.com/oblivionremastered/mods/282/)'
 
     - &supersede
       type: warn

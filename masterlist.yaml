@@ -235,7 +235,7 @@ prelude:
       subs:
         - 'OBSE'
         - '[Oblivion Remastered Script Extender (OBSE64)](https://www.nexusmods.com/oblivionremastered/mods/282/)'
-      condition: 'file("../../../Binaries/Win64/OBSE/Plugins/([^\.]+\.dll)") and not file("../../../Binaries/Win64/obse64_1_512_105.dll")'
+      condition: 'file("../../../../Binaries/Win64/OBSE/Plugins/([^\.]+\.dll)") and not file("../../../../Binaries/Win64/obse64_1_512_105.dll")'
 
     - &supersede
       type: warn
@@ -346,7 +346,7 @@ globals:
     subs:
       - 'OBSE'
       - '[Oblivion Remastered Script Extender (OBSE64)](https://www.nexusmods.com/oblivionremastered/mods/282/)'
-    condition: 'file("../../../Binaries/Win64/OBSE/Plugins/([^\.]+\.dll)") and not file("../../../Binaries/Win64/obse64_1_512_105.dll")'
+    condition: 'file("../../../../Binaries/Win64/OBSE/Plugins/([^\.]+\.dll)") and not file("../../../../Binaries/Win64/obse64_1_512_105.dll")'
 
 groups:
   - name: &gameMasterGroup Main Game Master

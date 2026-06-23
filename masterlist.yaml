@@ -577,6 +577,11 @@ plugins:
 ###### Gameplay - Magic & Abilities ######
 ###### Gameplay - NPC Balance & Distribution ######
 ###### Gameplay - NPC Behaviour & Dialogue ######
+  - name: 'Realistic Player Speech Remastered.esp'
+    url:
+      - link: 'https://www.nexusmods.com/oblivionremastered/mods/4909/'
+        name: 'Realistic Player Dialogue Overhaul - Remastered and Expanded'
+
 ###### Gameplay - Quests ######
 ###### Gameplay - Skills & Leveling ######
 ###### Gameplay - User Interface ######

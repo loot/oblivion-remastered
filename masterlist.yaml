@@ -581,6 +581,9 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/oblivionremastered/mods/4909/'
         name: 'Realistic Player Dialogue Overhaul - Remastered and Expanded'
+    req:
+      - '00 Realistic Player Speech.esp'
+      - 'SI Player Dialogue Overhaul.esp'
 
 ###### Gameplay - Quests ######
 ###### Gameplay - Skills & Leveling ######
